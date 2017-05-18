@@ -1,0 +1,21 @@
+.results-section{
+  padding:20px 0px;
+  border-top: 2px solid #cfdade;
+  background: -moz-linear-gradient(122deg, rgba(150,157,176,1) 0%, rgba(255,255,255,1) 100%) !important; /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(150,157,176,1))) !important;         /* safari4+,chrome */
+  background: -webkit-linear-gradient(122deg, rgba(150,157,176,1) 0%, rgba(255,255,255,1) 100%) !important; /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(122deg, rgba(150,157,176,1) 0%, rgba(255,255,255,1) 100%) !important; /* opera 11.10+ */
+  background: -ms-linear-gradient(122deg, rgba(150,157,176,1) 0%, rgba(255,255,255,1) 100%) !important; /* ie10+ */
+  background: linear-gradient(328deg, rgba(150,157,176,1) 0%, rgba(255,255,255,1) 100%) !important; /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#969DB0',GradientType=0 ) !important; /* ie6-9 */
+  .tags-area{
+    margin-bottom:20px;
+    button{
+      margin-right:5px;
+      background-color:#eeeeee;
+      &:hover{
+        background-color:#e9e9e9;
+      }
+    }
+  }
+}

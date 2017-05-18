@@ -1,5 +1,5 @@
 %nav.navbar.navbar-default{style:"margin-bottom:0px;background-color:#ffffff"}
-  .container-fluid
+  .container-fluid{style:"border-bottom:2px solid #cfdade"}
     .navbar-header{style:"height:100px"}
       %a.navbar-brand
         .logo{style: "background-image:url(#{asset_url('minwoo_logo.png')})"}
@@ -7,8 +7,6 @@
         .logo{style: "background-image:url(#{asset_url('wouldyou_logo.png')})"}
 
 = render 'about'
-
-= render 'tags'
 
 = render 'results'
 
