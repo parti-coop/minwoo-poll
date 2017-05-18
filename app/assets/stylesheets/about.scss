@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 .cover-section{
   background-color:purple;
   height:600px;
@@ -13,5 +14,21 @@
     font-weight:200;
     letter-spacing:-0.08em;
     margin-bottom:-20px;
+  }
+  table{
+    margin:20px 0px;
+    width:300px;
+
+    td{
+      font-family:'Nanum Myeongjo', serif;
+      font-size:40px;
+      text-align:center;
+      width:60px;
+      height:60px;
+    }
+
+    tr.interval > td{
+      height:5px;
+    }
   }
 }
