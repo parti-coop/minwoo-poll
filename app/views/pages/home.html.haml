@@ -1,8 +1,10 @@
-%nav.navbar.navbar-default{style:"margin-bottom:0px"}
+%nav.navbar.navbar-default{style:"margin-bottom:0px;background-color:#ffffff"}
   .container-fluid
-    .navbar-header
+    .navbar-header{style:"height:100px"}
       %a.navbar-brand
-        민우회 로고
+        .logo{style: "background-image:url(#{asset_url('minwoo_logo.png')})"}
+        .logo{style: "width:150px;background-image:url(#{asset_url('fes_logo.png')})"}
+        .logo{style: "background-image:url(#{asset_url('wouldyou_logo.png')})"}
 
 = render 'about'
 
