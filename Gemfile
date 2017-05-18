@@ -19,6 +19,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'masonry-rails'
+gem 'rails-ujs'
 
 # env
 gem 'envyable'
