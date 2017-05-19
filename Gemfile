@@ -21,6 +21,10 @@ gem 'haml-rails'
 gem 'bootstrap-sass'
 gem 'masonry-rails'
 gem 'rails-ujs'
+gem 'jquery-rails'
+
+#google api
+gem 'google_drive'
 
 # env
 gem 'envyable'
