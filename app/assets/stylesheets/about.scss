@@ -3,6 +3,13 @@
   padding:80px 40px;
   background-size:cover;
   color:#ffffff;
+  @media (max-width: $screen-xs-max) {
+    padding:10px !important;
+    height:500px !important;
+    .container{  text-align:center; }
+    table{  margin:20px auto !important;  }
+    button.btn-forward-poll{  width:258px !important;  }
+  }
   h1{
     font-size:70px;
     font-weight:200;
@@ -17,7 +24,9 @@
   table{
     margin:20px 0px;
     width:300px;
-
+    @media (max-width: $screen-xs-max) {
+      width:258px;
+    }
     td{
       border:1px solid #000000 !important;
       color:#000000;
@@ -39,5 +48,9 @@
     color: #424F9B;
     font-family: 'Nanum Myeongjo', serif;
     background-color: rgba(255,255,255,.5);
+    &:hover{
+      text-decoration:underline;
+      background-color:rgba(255,255,255,.8);
+    }
   }
 }

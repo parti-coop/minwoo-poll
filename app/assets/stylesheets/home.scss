@@ -4,4 +4,14 @@
   width:80px;
   background-size:contain;
   margin-right:5px;
+  background-repeat:no-repeat;
+  @media (max-width: $screen-xs-max) {
+    height:50px;
+    width:50px;
+  }
+}
+nav > .container-fluid{
+  @media (max-width: $screen-xs-max) {
+    height:80px !important;
+  }
 }
