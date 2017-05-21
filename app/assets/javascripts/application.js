@@ -5,5 +5,8 @@
 //= require masonry/masonry.min
 
 $(document).ready(function(){
-  alert("");
+  $(".results-area").masonry({
+    itemSelector: '.box',
+    columnWidth: 160
+  })
 })
