@@ -1,11 +1,11 @@
 .cover-section{
-  height:600px;
-  padding:80px 40px;
+  height:500px;
+  padding:50px 40px;
   background-size:cover;
   color:#ffffff;
   @media (max-width: $screen-xs-max) {
     padding:10px !important;
-    height:500px !important;
+    height:450px !important;
     .container{  text-align:center; }
     table{  margin:20px auto !important;  }
     button.btn-forward-poll{  width:258px !important;  }
