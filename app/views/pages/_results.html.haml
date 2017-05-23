@@ -1,36 +1,25 @@
 %section.results-section
   .container.tags-area
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       운전하거나 대중교통 이용시
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       은행 대출, 부동산 계약과 같은 신용관련 업무 안에서
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       가족관계에서
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       직장에서
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       학교에서
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       커뮤니티 안에서
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       친밀한 관계 안에서
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       대중매체에서
     %button.btn{type:"button"}
-      %i.glyphicon.glyphicon-map-marker
       기타
   .container
     .results-area
-      - @feedback.all_cases.each do |caze|
-        .box
-          = caze
-          .author
-            #{@feedback.region} 거주, #{@feedback.age}
+      .box
+        .author
+

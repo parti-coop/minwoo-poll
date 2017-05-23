@@ -23,6 +23,12 @@ gem 'masonry-rails'
 gem 'rails-ujs'
 gem 'jquery-rails'
 
+# scheduler
+gem 'sidekiq'
+gem 'sidekiq-cron'
+gem 'redis'
+gem 'redis-namespace'
+
 #google api
 gem 'google_drive'
 
