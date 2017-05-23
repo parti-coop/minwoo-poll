@@ -24,3 +24,4 @@
 
 local_env.yml
 .DS_Store
+/config/google-drive.json
