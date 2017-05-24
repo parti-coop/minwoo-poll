@@ -20,6 +20,9 @@
       기타
   .container
     .results-area
-      .box
-        .author
-
+      - @feedbacks.each do |feedback|
+        - feedback.all_cases.each do |caze|
+          .box
+            = caze
+            .author
+              #{feedback.region} 거주, #{feedback.age}
