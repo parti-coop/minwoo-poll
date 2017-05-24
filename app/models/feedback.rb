@@ -10,7 +10,7 @@ class Feedback < ApplicationRecord
     case_spots = [case1_spot, case2_spot, case3_spot, case4_spot, case5_spot]
     results = []
 
-    if spot != 0
+    if spot!=0
       case_spots.each_with_index do |s, index|
         if s == spot
           results.push(cases[index])
