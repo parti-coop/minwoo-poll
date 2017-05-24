@@ -23,6 +23,9 @@
       - @feedbacks.each do |feedback|
         - feedback.find_cases(@spot).each do |caze|
           .box
-            = caze
+            = caze["content"]
             .author
               #{feedback.region} 거주, #{feedback.age}
+            .spot
+              #{caze["where"]}
+

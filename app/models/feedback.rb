@@ -6,18 +6,22 @@ class Feedback < ApplicationRecord
   #end
 
   def find_cases(spot)
-    cases = [case1, case2, case3, case4, case5]
-    case_spots = [case1_spot, case2_spot, case3_spot, case4_spot, case5_spot]
+
+    cases = [case1, case2, case3, case4, case5].reject { |c| c.blank? }
+    case_spots = [case1_spot, case2_spot, case3_spot, case4_spot, case5_spot].reject { |c| c.blank? }
     results = []
 
-    if spot != 0
-      case_spots.each_with_index do |s, index|
-        if s == spot
-          results.push(cases[index])
+    case_spots.each_with_index do |s, index|
+      case_hash = {'content' => cases[index], 'where' => s}
+      results << case_hash
+
+      if spot != 0
+        results.each_with_index do |result, index|
+          if result["where"] != spot
+            results.delete_at(index)
+          end
         end
       end
-    else
-      results = cases.reject{ |c| c.blank? }
     end
 
     return results
