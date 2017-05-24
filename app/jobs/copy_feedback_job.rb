@@ -6,8 +6,12 @@ class CopyFeedbackJob
     session = GoogleDrive::Session.from_service_account_key("config/google-drive.json")
     ws  = session.spreadsheet_by_key("1Tl0tZfDRYNsfyyMZtRZmb8HgbjaZ4z81Du3jWFj0zVA").worksheets[0]
 
-    (2..ws.num_rows).each do |row|
+    start_feedback_row = 1
+    last_row = (Feedback.order(:row).last.try(:row) || start_feedback_row) + 1
+
+    (last_row..ws.num_rows).each do |row|
       feedback = Feedback.new
+      feedback.row = row
       feedback.created_at = ws[row,1]
       feedback.age = ws[row,2]
       feedback.region = ws[row,3]
