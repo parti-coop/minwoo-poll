@@ -21,7 +21,7 @@
   .container
     .results-area
       - @feedbacks.each do |feedback|
-        - feedback.all_cases.each do |caze|
+        - feedback.find_cases('직장에서').each do |caze|
           .box
             = caze
             .author
