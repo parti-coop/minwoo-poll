@@ -1,27 +1,29 @@
 %section.results-section
   .container.tags-area
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=0\'"}
+      모두 보기
+    %button.btn{type:"button",onclick:"location.href=\'?spot=1\'"}
       운전하거나 대중교통 이용시
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=2\'"}
       은행 대출, 부동산 계약과 같은 신용관련 업무 안에서
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=3\'"}
       가족관계에서
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=4\'"}
       직장에서
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=5\'"}
       학교에서
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=6\'"}
       커뮤니티 안에서
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=7\'"}
       친밀한 관계 안에서
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=8\'"}
       대중매체에서
-    %button.btn{type:"button"}
+    %button.btn{type:"button",onclick:"location.href=\'?spot=9\'"}
       기타
   .container
     .results-area
       - @feedbacks.each do |feedback|
-        - feedback.find_cases('직장에서').each do |caze|
+        - feedback.find_cases(@spot).each do |caze|
           .box
             = caze
             .author
