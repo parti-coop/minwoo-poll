@@ -1,25 +1,11 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # minwoo-poll
+
+## 실환경 설정
+
+데이터베이스를 만듭니다.
+
+```
+mysql> drop database minwoo_poll;
+mysql> create database minwoo_poll CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
