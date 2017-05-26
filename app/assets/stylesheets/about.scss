@@ -36,6 +36,16 @@
       padding:20px 10px !important;
     }
   }
+  .intro-label{
+    font-size:11px;
+    font-weight:200;
+    letter-spacing:0.2em;
+    background-color:#4b444e;
+    cursor:pointer;
+    &:hover{
+      background-color:lighten(#4b444e,10%) !important;
+    }
+  }
   table{
     margin:20px 0px;
     width:300px;
