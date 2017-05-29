@@ -3,7 +3,9 @@ class CopyFeedbackJob
 
   def perform
     # read feedback from google sheet
-    session = GoogleDrive::Session.from_service_account_key("config/google-drive.json")
+    #session = GoogleDrive::Session.from_service_account_key("config/google-drive.json")
+    configPath = Rails.root.join('config','google-drive.json')
+    session = GoogleDrive::Session.from_service_account_key(configPath)
     ws  = session.spreadsheet_by_key("1Tl0tZfDRYNsfyyMZtRZmb8HgbjaZ4z81Du3jWFj0zVA").worksheets[0]
 
     start_feedback_row = 1
