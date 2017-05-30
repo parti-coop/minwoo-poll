@@ -7,6 +7,8 @@
 $(document).ready(function(){
   $(".results-area").masonry({
     itemSelector: '.box',
-    columnWidth: 160
+    fitWidth: true,
+    horizontalOrder: true,
+    gutter: 10
   })
 })
