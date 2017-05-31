@@ -11,6 +11,10 @@
 
   .tags-area{
     margin-bottom:20px;
+    text-align:center;
+    @media (max-width: $screen-xs-max) {
+      text-align:left !important;
+    }
     button{
       margin:5px;
       background-color:#9885ab;
