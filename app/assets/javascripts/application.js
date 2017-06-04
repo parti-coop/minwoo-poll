@@ -11,4 +11,8 @@ $(document).ready(function(){
     horizontalOrder: true,
     gutter: 10
   })
+
+  $(".cover-section").click(function(){
+    location.href="/";
+  })
 })
