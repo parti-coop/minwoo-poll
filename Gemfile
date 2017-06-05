@@ -29,6 +29,10 @@ gem 'sidekiq-cron'
 gem 'redis'
 gem 'redis-namespace'
 
+#slack
+gem 'slack-notifier'
+gem 'exception_notification'
+
 #google api
 gem 'google_drive'
 
