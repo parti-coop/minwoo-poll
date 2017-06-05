@@ -12,7 +12,7 @@ $(document).ready(function(){
     gutter: 10
   })
 
-  $(".cover-section").click(function(){
+  $(".cover-section table").click(function(){
     location.href="/";
   })
 })
