@@ -10,8 +10,13 @@
     %meta{:property => "og:image", :content => "http://minwoo-poll.parti.do/seo.png"}
     %meta{:property => "og:description", :content => "당신이 겪거나 목격한 차별 경험을 들려주세요"}
     %meta{:name => "image", :content => "http://minwoo-poll.parti.do/seo.png"}
-
+    %meta{:name => "keywords", :content => "2017, 여성차별, 한국여성민우회, 우주당"}
     %title 2017' 지금 여기 여성차별
+
+    /favicons
+    %link{href: asset_url("favicons/favicon-32x32.png"), rel: "icon", sizes: "32x32", type: "image/png"}
+    %link{href: asset_url("favicons/favicon-16x16.png"), rel: "icon", sizes: "16x16", type: "image/png"}
+    %link{color: "#8F45D0", href: asset_url("favicons/favicon.ico"), rel: "mask-icon"}
 
     = stylesheet_link_tag 'application', media: 'all'
     %link{href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel: "stylesheet"}
