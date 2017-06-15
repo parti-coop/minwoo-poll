@@ -23,10 +23,11 @@
     .results-area
       - @feedbacks.each do |feedback|
         - feedback.find_cases(@spot).each do |caze|
-          .box
-            = caze["content"]
-            .author
-              #{feedback.region} 거주, #{feedback.age}
-            .spot
-              #{caze["where"]}
+          - if caze["content"].present?
+            .box
+              = caze["content"]
+              .author
+                #{feedback.region} 거주, #{feedback.age}
+              .spot
+                #{caze["where"]}
 
