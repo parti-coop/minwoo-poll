@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170610093935) do
+ActiveRecord::Schema.define(version: 20170616050157) do
 
   create_table "feedbacks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC" do |t|
     t.date "feedbacked_at"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170610093935) do
     t.string "case5_spot"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["row"], name: "index_feedbacks_on_row"
+    t.index ["row"], name: "index_feedbacks_on_row", unique: true
   end
 
 end

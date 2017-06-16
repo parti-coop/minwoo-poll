@@ -5,14 +5,17 @@ class Feedback < ApplicationRecord
   #  [case1, case2, case3, case4, case5].reject { |c| c.blank? }
   #end
 
+  validates :row, uniqueness: true
+
   def find_cases(spot)
 
     cases = [case1, case2, case3, case4, case5]
     case_spots = [case1_spot, case2_spot, case3_spot, case4_spot, case5_spot]
     results = []
 
-    case_spots.each_with_index do |s, index|
-      case_hash = {'content' => cases[index], 'where' => s}
+    cases.each_with_index do |s, index|
+
+      case_hash = {'content' => s, 'where' => case_spots[index]}
       results << case_hash
 
       if spot != 0

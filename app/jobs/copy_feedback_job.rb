@@ -1,6 +1,10 @@
 class CopyFeedbackJob
   include Sidekiq::Worker
 
+  # 1) Feedback.order(:row).last.try(:row) ==> 가장큰 열번호
+  # 2) row 유일키 처리
+  # 3) Feedback 지우기만 하면 웬지 다 가져올 것 같은데
+
   def perform
     # read feedback from google sheet
     #session = GoogleDrive::Session.from_service_account_key("config/google-drive.json")

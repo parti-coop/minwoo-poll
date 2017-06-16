@@ -1,4 +1,4 @@
 feedback_job:
-  cron: "*/5 * * * * Asia/Seoul"
+  cron: "*/45 * * * * Asia/Seoul"
   class: "CopyFeedbackJob"
   queue: default
